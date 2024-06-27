@@ -1,114 +1,65 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>전선아의 포트폴리오</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>🧍‍♀️ 안녕하세요, 전선아입니다.</h1>
-        <p>꾸준한 자기 개발로 변화를 주도하는 IT 신입 지원자</p>
-    </header>
+---
+title: Home
+description: The latest app to help you find new friends with common interests.
+image: https://source.unsplash.com/j5LSbCqB1wA/2000x1322?a=.png
+bottom_image: https://unsplash.it/2000/1322?a=.png
+---
 
-    <section class="hero" style="background-image: url('https://source.unsplash.com/j5LSbCqB1wA/2000x1322?a=.png')">
-        <div class="inner-hero text-container">
-            <div class="hero-text-container">
-                <h1 class="editable">Make a new friend today</h1>
-                <p class="subtext editable">Frisco helps you find new friends with common interests. Search for a new Tennis partner, find a baking side-kick or befriend a new drinking buddy.</p>
-                <div class="cta button alt"><a href="#">Join Now</a></div>
-            </div>
-        </div>
-        <div class="learn-more"><a href="#learn-more">Learn more <span class="arrow">&#x25BC;</span></a></div>
-    </section>
+<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
+	<div class="inner-hero text-container">
+		<div class="hero-text-container">
+			<h1 class="editable">Make a new friend today</h1>
+			<p class="subtext editable">Frisco helps you find new friends with common interests. Search for a new Tennis partner, find a baking side-kick or befriend a new drinking buddy.</p>
+			<div class="cta button alt"><a href="#">Join Now</a></div>
+		</div>
+	</div>
+	<div class="learn-more"><a href="#learn-more">Learn more <span class="arrow">&#x25BC;</span></a></div>
+</section>
 
-    <div class="content">
-        <section class="info" id="learn-more">
-            <div class="container flex">
-                <div class="text">
-                    <h2 class="editable">Introduce yourself</h2>
-                    <p class="editable">Making news friends in the adult world is hard. Frisco is the perfect filter matching you the most interesting people in your area.</p>
-                </div>
-                <div class="image">
-                    <img class="editable" src="http://placehold.it/650x1300" alt="Screenshot" />
-                </div>
-            </div>
-        </section>
+<div class="content">
+	<section class="info" id="learn-more">
+		<div class="container flex">
+			<div class="text">
+				<h2 class="editable">Introduce yourself</h2>
+				<p class="editable">Making news friends in the adult world is hard. Frisco is the perfect filter matching you the most interesting people in your area.</p>
+			</div>
+			<div class="image">
+				<img class="editable" src="http://placehold.it/650x1300" alt="Screenshot" />
+			</div>
+		</div>
+	</section>
 
-        <section class="info">
-            <div class="container flex">
-                <div class="text">
-                    <h2 class="editable">Pick your interests</h2>
-                    <p class="editable">The more you tell Frisco the better it gets to know you. Frisco matches you with people who share similar interests with you.</p>
-                </div>
-                <div class="image">
-                    <img class="editable" src="http://placehold.it/650x1300" alt="Screenshot" />
-                </div>
-            </div>
-        </section>
+	<section class="info">
+		<div class="container flex">
+			<div class="text">
+				<h2 class="editable">Pick your interests</h2>
+				<p class="editable">The more you tell Frisco the better it gets to know you. Frisco matches you with people who share similar interests with you.</p>
+			</div>
+			<div class="image">
+				<img class="editable" src="http://placehold.it/650x1300" alt="Screenshot" />
+			</div>
+		</div>
+	</section>
 
-        <section class="info">
-            <div class="container flex">
-                <div class="text">
-                    <h2 class="editable">Swipe and go</h2>
-                    <p class="editable">Frisco shows you cards with people who might be a good match for friendship. Swipe left to move to the next card or right to start talking.</p>
-                </div>
-                <div class="image">
-                    <img class="editable" src="http://placehold.it/650x1300" alt="Screenshot" />
-                </div>
-            </div>
-        </section>
+	<section class="info">
+		<div class="container flex">
+			<div class="text">
+				<h2 class="editable">Swipe and go</h2>
+				<p class="editable">Frisco shows you cards with people who might be a good match for friendship. Swipe left to move to the next card or right to start talking.</p>
+			</div>
+			<div class="image">
+				<img class="editable" src="http://placehold.it/650x1300" alt="Screenshot" />
+			</div>
+		</div>
+	</section>
 
-        <section class="hero" style="background-image: url('https://unsplash.it/2000/1322?a=.png')">
-            <div class="inner-hero text-container">
-                <div class="hero-text-container">
-                    <h2 class="editable">Find your buddy today</h2>
-                    <p class="subtext editable">It's free, fun and an exciting way to meet new people.</p>
-                    <div class="cta button alt"><a href="#">Join Now</a></div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <section id="about-me">
-        <h2>About me</h2>
-        <ul>
-            <li>"책임감 있고 성실하게 업무를 수행합니다."</li>
-            <li>"긍정적이고 적극적인 태도로 일합니다."</li>
-            <li>"다양한 의견을 수용하며 팀의 의견을 조율할 수 있습니다."</li>
-            <li>🔍 저는 C언어, HTML5, CSS3, 자바스크립트, jQuery 라이브러리, 자료구조, Python, NLP, 머신러닝, JAVA, 리눅스, 디자인패턴, Matlab, Android Studio, kotlin, JSP, SQL, spring framework를 배웠습니다.</li>
-            <li>😅 그렇지만 배운것을 전부 잘하진 않습니다 ..</li>
-            <li>📸 저는 사진 촬영을 취미로 하여 풍경과 인물을 아름답게 담아내는 것을 즐깁니다.</li>
-        </ul>
-    </section>
-
-    <section id="career">
-        <h2>Career</h2>
-        <h3>Education</h3>
-        <p>Hongik University (Sejong)<br>
-        Software<br>
-        2020.03. ~ 2024.02</p>
-        
-        <h3>Activities</h3>
-        <ul>
-            <li>소프트웨어융합학과 기획부 (2022.12. ~ )</li>
-            <li>졸업 프로젝트 (2023.03. ~ 2023.12)</li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <p><a href="https://www.notion.so/850910a3f9ac4020b4cec93e567c29ed?pvs=21">프로젝트 자세히 보기</a></p>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:jeonsa0314@naver.com">jeonsa0314@naver.com</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 전선아. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+	<section class="hero" style="background-image: url({% include relative-src.html src=page.bottom_image %})">
+		<div class="inner-hero text-container">
+			<div class="hero-text-container">
+				<h2 class="editable">Find your buddy today</h2>
+				<p class="subtext editable">It's free, fun and an exciting way to meet new people.</p>
+				<div class="cta button alt"><a href="#">Join Now</a></div>
+			</div>
+		</div>
+	</section>
+</div>
