@@ -27,6 +27,3 @@ blurb: Anna likes long walks on the beach and buffet breakfast.
     </section>
 </body>
 </html>
-
-
-수정해줘
