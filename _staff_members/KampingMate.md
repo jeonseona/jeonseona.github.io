@@ -23,8 +23,9 @@ blurb: Anna likes long walks on the beach and buffet breakfast.
     <section>
         <h1>고객센터</h1>
         <p>footer, 마이페이지, 메인페이지 (네이버 뉴스)</p>
-        <img src="{{ '/images/KampingMate/News.PNG' | relative_url }}" alt="Screenshot">
+        <img src="/images/KampingMate/News.PNG" alt="Screenshot">
     </section>
 </body>
 </html>
+
 
