@@ -1,7 +1,8 @@
 ---
-name: Betty Jefferson
-position: Developer
-image_path: https://source.unsplash.com/collection/139386/601x601?a=.png
+name: FoodMate
+position: 고객센터, 소개페이
+image_path: img width="500" height="500" src="{{ site.baseurl }}/images/KampingMate/KampingMate_main.webp" alt="Screenshot"
+github_link: https://github.com/jeonseona/FOODMATE
 twitter_username: CloudCannon
-blurb: Betty is a bookworm who will typically have four books on the go.
+blurb: Anna likes long walks on the beach and buffet breakfast.
 ---
