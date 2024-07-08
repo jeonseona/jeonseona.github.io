@@ -5,4 +5,5 @@ image_path: img width="500" height="500" src="{{ site.baseurl }}/images/KampingM
 github_link: https://github.com/jeonseona/FOODMATE
 twitter_username: CloudCannon
 blurb: Anna likes long walks on the beach and buffet breakfast.
+personal_link: https://github.com/jeonseona/FOODMATE
 ---
