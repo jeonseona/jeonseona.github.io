@@ -29,9 +29,11 @@ image: https://source.unsplash.com/BcoGknSqlDc/2000x1322?a=.png
                 <li>
                     <div class="square-image" style="background-image: url('{{ person.image_path }}')"></div>
                     <div class="name">
-                        {% if person.name == 'KampingMate' or person.name == 'FOODMATE' or person.name == 'CampusConnect' or person.name == '팀 어벤져스' or person.name == 'PBL' %}
+                        {% if person.name == 'KampingMate' or person.name == 'FOODMATE' or person.name == 'CampusConnect' or person.name == '팀 어벤져스' or person.name == 'PBL' or person.name == 'MATLAB' %}
                             {% if person.name == 'PBL' %}
                                 <a target="_blank" href="https://docs.google.com/presentation/d/12Ss-amrVmO2sQfWTKerLywweibcxtXR7/edit?usp=drive_link&ouid=117274979527861639139&rtpof=true&sd=true">{{ person.name }}</a>
+                            {% elif person.name == 'MATLAB' %}
+                                <a target="_blank" href="https://docs.google.com/presentation/d/19GnuthZ6E0LBmRaDEEjcRDib61sjdDQ_/edit?usp=drive_link&ouid=117274979527861639139&rtpof=true&sd=true">{{ person.name }}</a>
                             {% else %}
                                 <a target="_blank" href="{{ person.github_link }}">{{ person.name }}</a>
                             {% endif %}
