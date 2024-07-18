@@ -12,69 +12,24 @@ image: https://source.unsplash.com/WNAO036c6FM/2000x1322?a=.png
 <section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h1 class="editable">Get in touch today</h1>
-			<p class="subtext editable">If you have any questions or queries send us a message and we'll get back to you as soon as we can.</p>
+			<p class="subtext editable">안녕하세요, 저는 전선아입니다. 저는 웹 개발과 데이터 분석에 열정을 가지고 있는 소프트웨어 엔지니어입니다. 새로운 기술을 배우고 적용하는 것을 좋아하며, 복잡한 문제를 해결하는 과정에서 성취감을 느낍니다. 사용자 경험을 최우선으로 생각하며, 효율적이고 직관적인 솔루션을 개발하고자 노력합니다.
+
+다양한 프로젝트 경험을 통해 협업과 커뮤니케이션의 중요성을 깨달았으며, 항상 열린 마음으로 새로운 도전을 즐깁니다. 저의 목표는 지속적인 학습과 성장을 통해 더욱 뛰어난 개발자가 되는 것입니다.
+
+문의 사항이 있거나 협업을 원하시면 언제든지 연락주세요!
+</p>
 		</div>
 	</div>
 </section>
 
 <section class="pad">
 	<div class="text-container contact-box">
-		<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
-			<input type="hidden" name="_to" value="support@cloudcannon.com">
-			<input type="text" name="_gotcha" style="display: none;">
-
-			<label for="name">Name</label>
-			<input type="text" name="name" id="name" placeholder="Enter your name...">
-
-			<label for="email">Email Address</label>
-			<input type="email" name="email" id="email" placeholder="Enter your email..." required>
-
-			<label for="message">Message</label>
-			<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
-
-			<input type="submit" value="Send Message">
-		</form>
 
 		<div class="contact-details">
-			<h3>Address</h3>
-			<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
 
 			<h3>Email</h3>
-			<p class="editable"><a href="mailto:support@example.com">support@example.com</a></p>
+			<p class="editable"><a href="mailto:jeonsa0314@gmail.com">jeonsa0314@gmail.com</a></p>
 		</div>
 	</div>
 </section>
 
-<div class="map" id="map"></div>
-
-<script>
-	window.mapData = {{ page.map | jsonify }};
-
-	function initMap() {
-		var myOptions = {
-			scrollwheel: false,
-			draggable: false,
-			panControl: false,
-			disableDefaultUI: true,
-			styles: [{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"color":"#f7f1df"}]},{"featureType":"landscape.natural","elementType":"geometry","stylers":[{"color":"#d0e3b4"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.medical","elementType":"geometry","stylers":[{"color":"#fbd3da"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#bde6ab"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffe15f"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#efd151"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"black"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"color":"#cfb2db"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#a2daf2"}]}],
-			zoom: window.mapData.zoom,
-			maxZoom: window.mapData.zoom,
-			minZoom: window.mapData.zoom,
-			center: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
-			mapTypeId: google.maps.MapTypeId.ROADMAP
-		};
-
-		var map = new google.maps.Map(document.getElementById('map'), myOptions);
-
-		var marker = new google.maps.Marker({
-			map: map,
-			position: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude)
-		});
-
-		google.maps.event.addDomListener(window, 'resize', function() {
-			map.setCenter(myOptions.center);
-		});
-	}
-</script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script>
