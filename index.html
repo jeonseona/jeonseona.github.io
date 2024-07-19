@@ -5,172 +5,69 @@ image: https://source.unsplash.com/j5LSbCqB1wA/2000x1322?a=.png
 bottom_image: https://unsplash.it/2000/1322?a=.png
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<style>
-/* Basic Styling */
-body {
-    font-family: 'Poppins', sans-serif;
-    color: #4A4A4A;
-}
-
-.section-title {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-}
-
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    height: 80vh;
-    text-align: center;
-}
-
-.inner-hero .hero-text-container {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.subtext {
-    color: #ff6347;
-    font-size: 1.2rem;
-}
-
-.learn-more {
-    margin-top: 1rem;
-}
-
-.learn-more a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    color: #ff6347;
-}
-
-.learn-more a .arrow {
-    display: inline-block;
-    margin-left: 0.5rem;
-    transition: transform 0.3s;
-}
-
-.learn-more a:hover .arrow {
-    transform: translateY(5px);
-}
-
-/* Info Section Styling */
-.info {
-    padding: 3rem 0;
-    background-color: #fefefe;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.text, .image {
-    flex: 1;
-    padding: 1rem;
-}
-
-.text h2 {
-    color: #ff6347;
-    font-size: 1.5rem;
-}
-
-.text ul {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-}
-
-.text ul li {
-    margin-bottom: 0.5rem;
-}
-
-.image img {
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.image img:hover {
-    transform: scale(1.05);
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-}
-</style>
-
 <section class="hero" style="background-image: url('https://drive.google.com/uc?export=view&id=1FUT9sMQSVu1vv8O1X4ZTKECHMTqVvstx')">
-    <div class="inner-hero text-container">
-        <div class="hero-text-container">
-            <h1 class="editable">전선아의 포트폴리오</h1>
-            <p class="subtext editable">
-                <strong style="color: #ff6347;">강점</strong>과 <strong style="color: #ff6347;">약점</strong>을 이해하고 지속적으로 개선하는 <strong style="color: #ff6347;">성장 마인드</strong>를 가진 
-                사람이자 꾸준한 <strong style="color: #ff6347;">자기 개발</strong>로 <strong style="color: #ff6347;">변화를 주도하는</strong> IT 신입 지원자 입니다.
-            </p>
-        </div>
-    </div>
-    <div class="learn-more"><a href="#learn-more"> more <span class="arrow">&#x25BC;</span></a></div>
+	<div class="inner-hero text-container">
+		<div class="hero-text-container">
+			<h1 class="editable">전선아의 포트폴리오</h1>
+			<p class="subtext editable">
+    <strong style="color: green;">강점</strong>과 <strong style="color: green;">약점</strong>을 이해하고 지속적으로 개선하는 <strong style="color: green;">성장 마인드</strong>를 가진 
+    사람이자 꾸준한 <strong style="color: green;">자기 개발</strong>로 <strong style="color: green;">변화를 주도하는</strong> IT 신입 지원자 입니다.
+</p>
+		</div>
+	</div>
+	<div class="learn-more"><a href="#learn-more"> more <span class="arrow">&#x25BC;</span></a></div>
 </section>
 
 <div class="content">
-    <section class="info" id="learn-more">
-        <div class="container flex">
-            <div class="text">
-                <h2 class="editable section-title">KampingMate</h2>
-                <h3 class="editable">캠핑장 추천&캠핑장 관련정보 제공 페이지</h3>
-                <ul>
-                    <li>캠핑 초보자가 사용가능한 웹사이트를 제공하자!</li>
-                    <li>초심자를 위한 가이드 페이지 제공</li>
-                    <li>캠핑장에 대한 정보뿐 아니라 캠핑에 대한 연관정보까지 제공</li>
-                </ul>
-            </div>
-            <div class="image">
-                <span class="editable"><img width="500" height="500" src="{{ site.baseurl }}/images/KampingMate/KampingMate_main.webp" alt="Screenshot"></span>
-            </div>
-        </div>
-    </section>
+	<section class="info" id="learn-more">
+		<div class="container flex">
+			<div class="text">
+				<h2 class="editable">KampingMate</h2>
+				<h3 class="editable">캠핑장 추천&캠핑장 관련정보 제공 페이지</h3>
+				<ul>
+					<li>캠핑 초보자가 사용가능한 웹사이트를 제공하자 !</li>
+					<li>초심자를 위한 가이드 페이지 제공</li>
+					<li>캠핑장에 대한 정보뿐 아니라 캠핑에 대한 연관정보까지 제공</li>
+				</ul>
+			</div>
+			<div class="image">
+				<span class="editable"><img width="500" height="500" src="{{ site.baseurl }}/images/KampingMate/KampingMate_main.webp" alt="Screenshot"></span>
+			</div>
+		</div>
+	</section>
 
-    <section class="info">
-        <div class="container flex">
-            <div class="text">
-                <h2 class="editable section-title">FoodMate</h2>
-                <h3 class="editable">음식메뉴 추천 페이지</h3>
-                <ul>
-                    <li>음식도 추천받고,</li>
-                    <li>건강하게 직접 해 먹을 수 있는 사이트를 만들자!</li>
-                    <li>개인 바디데이터와 사용자가 선택한 음식 추천 조건을 선택</li>
-                </ul>
-            </div>
-            <div class="image">
-                <span class="editable"><img width="500" height="500" src="{{ site.baseurl }}/images/FoodMate_main.webp" alt="Screenshot"></span>
-            </div>
-        </div>
-    </section>
+	<section class="info">
+		<div class="container flex">
+			<div class="text">
+				<h2 class="editable">FoodMate</h2>
+				<h3 class="editable">음식메뉴 추천 페이지</h3>
+				<ul>
+					<li>음식도 추천받고,</li>
+					<li>건강하게 직접 해 먹을 수 있는 사이트를 만들자!</li>
+					<li>개인 바디데이터와 사용자가 선택한 음식 추천 조건을 선택</li>
+				</ul>
+			</div>
+			<div class="image">
+				<span class="editable"><img width="500" height="500" src="{{ site.baseurl }}/images/FoodMate_main.webp" alt="Screenshot"></span>
+			</div>
+		</div>
+	</section>
 
-    <section class="info">
-        <div class="container flex">
-            <div class="text">
-                <h2 class="editable section-title">Campus Connect</h2>
-                <h3 class="editable">안드로이드를 기반으로 한 모바일 학생 명함</h3>
-                <ul>
-                    <li>채널에 등록하여 보다 쉽게 본인이 원하는 팀원을 구할 수 있다!</li>
-                    <li>조별과제, 멘토/멘티, 공모전과 같은 대학생활내에서의 활동을 위한 앱</li>
-                    <li>공모전 등의 정보도 실시간으로 수집 가능</li>
-                </ul>
-            </div>
-            <div class="image">
-                <span class="editable"><img width="500" height="500" src="{{ site.baseurl }}/images/CampusConnect.png" alt="Screenshot"></span>
-            </div>
-        </div>
-    </section>
+	<section class="info">
+		<div class="container flex">
+			<div class="text">
+				<h2 class="editable">Campus Connect</h2>
+				<h3 class="editable">안드로이드를 기반으로 한 모바일 학생 명함</h3>
+				<ul>
+					<li>채널에 등록하여 보다 쉽게 본인이 원하는 팀원을 구할 수 있다 !</li>
+					<li>조별과제, 멘토/멘티, 공모전과 같은 대학생활내에서의 활동을 위한 앱</li>
+					<li>공모전 등의 정보도 실시간으로 수집 가능</li>
+				</ul>
+			</div>
+			<div class="image">
+				<span class="editable"><img width="500" height="500" src="{{ site.baseurl }}/images/CampusConnect.png" alt="Screenshot"></span>
+
+			</div>
+		</div>
+	</section>
 </div>
