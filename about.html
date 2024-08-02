@@ -29,7 +29,7 @@ image: https://source.unsplash.com/BcoGknSqlDc/2000x1322?a=.png
                 <li>
                     <div class="square-image" style="background-image: url('{{ person.image_path }}')"></div>
                     <div class="name">
-                        {% if person.name == 'KampingMate' or person.name == 'FOODMATE' or person.name == 'CampusConnect' or person.name == '공학설계' or person.name == 'Matlab을 이용한 AES의 암호화와 복호화' %}
+                        {% if person.name == 'KampingMate' or person.name == 'FOODMATE' or person.name == 'CampusConnect' or person.name == '공학설계' or person.name == 'Matlab을 이용한 AES의 암호화와 복호화' or person.name == 'PBL' %}
                             <a target="_blank" href="{{ person.github_link }}">{{ person.name }}</a>
                         {% else %}
                             <a target="_blank" href="https://twitter.com/{{ person.twitter_username }}">{{ person.name }}</a>
